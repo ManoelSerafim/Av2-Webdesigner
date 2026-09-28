@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>TechStore</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <div class="brand">TechStore</div>
+      <nav class="menu">
+        <a href="#inicio">Início</a>
+        <a href="#produtos">Produtos</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="container hero-inner">
+        <p class="eyebrow">Tecnologia para o seu dia a dia</p>
+        <h1>Equipamentos e acessórios de informática</h1>
+        <p class="hero-text">Notebooks, periféricos e componentes com qualidade e bons preços.</p>
+        <a class="button" href="#produtos">Ver produtos</a>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="produtos">
+      <div class="container">
+        <h2>Produtos em destaque</h2>
+        <div class="products-grid">
+          <article class="card">
+            <img src="assets/notebook.svg" alt="Notebook Pro 15" />
+            <div class="card-body">
+              <h3>Notebook Pro 15</h3>
+              <p>Intel Core i5, 16 GB RAM e SSD de 512 GB.</p>
+              <strong>R$ 3.499,00</strong>
+              <a class="button button-small" href="#contato">Comprar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/mouse.svg" alt="Mouse Gamer" />
+            <div class="card-body">
+              <h3>Mouse Gamer</h3>
+              <p>Sensor preciso, iluminação RGB e design ergonômico.</p>
+              <strong>R$ 149,90</strong>
+              <a class="button button-small" href="#contato">Comprar</a>
+            </div>
+          </article>
+
+          <article class="card">
+            <img src="assets/keyboard.svg" alt="Teclado Mecânico" />
+            <div class="card-body">
+              <h3>Teclado Mecânico</h3>
+              <p>Teclas mecânicas, iluminação LED e conexões USB.</p>
+              <strong>R$ 279,90</strong>
+              <a class="button button-small" href="#contato">Comprar</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="servicos">
+      <div class="container">
+        <h2>Serviços</h2>
+        <div class="table-wrap">
+          <table>
+            <thead>
+              <tr>
+                <th>Serviço</th>
+                <th>Descrição</th>
+                <th>Valor</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Formatação</td>
+                <td>Instalação e configuração do sistema.</td>
+                <td>R$ 120,00</td>
+              </tr>
+              <tr>
+                <td>Limpeza</td>
+                <td>Manutenção preventiva.</td>
+                <td>R$ 80,00</td>
+              </tr>
+              <tr>
+                <td>Upgrade</td>
+                <td>Instalação de memória e SSD.</td>
+                <td>A partir de R$ 60,00</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-contact" id="contato">
+      <div class="container contact-grid">
+        <div class="contact-copy">
+          <h2>Entre em contato</h2>
+          <p>Envie uma mensagem para nossa equipe.</p>
+        </div>
+
+        <form class="contact-form">
+          <label>
+            Nome
+            <input type="text" placeholder="Digite seu nome" />
+          </label>
+          <label>
+            E-mail
+            <input type="email" placeholder="Digite seu e-mail" />
+          </label>
+          <label>
+            Mensagem
+            <textarea rows="4" placeholder="Digite sua mensagem"></textarea>
+          </label>
+          <button class="button button-small" type="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 TechStore - Loja Virtual de Informática</div>
+  </footer>
+</body>
+</html>

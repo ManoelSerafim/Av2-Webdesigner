@@ -1,0 +1,265 @@
+:root {
+  --navy: #0a1124;
+  --navy-2: #13264d;
+  --blue: #1f57e7;
+  --blue-dark: #1744b9;
+  --bg: #f4f7fb;
+  --card: #ffffff;
+  --text: #0f172a;
+  --muted: #5b6578;
+  --line: #d9e0eb;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.container {
+  width: min(1120px, calc(100% - 32px));
+  margin: 0 auto;
+}
+
+.topbar {
+  background: linear-gradient(180deg, #111827, var(--navy));
+  color: #fff;
+  padding: 18px 0;
+}
+
+.topbar-inner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+}
+
+.brand {
+  font-size: 1.55rem;
+  font-weight: 700;
+}
+
+.menu {
+  display: flex;
+  gap: 22px;
+  font-size: 0.95rem;
+}
+
+.hero {
+  background: linear-gradient(135deg, #1f55d8 0%, #2047b1 45%, #172a57 100%);
+  color: #fff;
+  padding: 78px 0 86px;
+}
+
+.hero-inner {
+  max-width: 680px;
+}
+
+.eyebrow {
+  margin: 0 0 14px;
+  font-size: 0.95rem;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 30px;
+  line-height: 1.08;
+  max-width: 10ch;
+}
+
+.hero-text {
+  margin: 14px 0 24px;
+  font-size: 20px;
+  max-width: 460px;
+}
+
+.section {
+  padding: 34px 0 42px;
+}
+
+.section-soft {
+  background: linear-gradient(180deg, #f7f9fd 0%, #eef3f9 100%);
+}
+
+h2 {
+  margin: 0 0 14px;
+  font-size: 1.35rem;
+}
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.card {
+  background: var(--card);
+  border: 1px solid rgba(21, 32, 55, 0.08);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0 4px 14px rgba(15, 23, 42, 0.08);
+}
+
+.card img {
+  height: 160px;
+  object-fit: cover;
+}
+
+.card-body {
+  padding: 16px 15px 14px;
+}
+
+.card-body h3 {
+  margin: 0 0 8px;
+  font-size: 1rem;
+}
+
+.card-body p {
+  margin: 0 0 10px;
+  color: #4b5563;
+  font-size: 0.92rem;
+  min-height: 34px;
+}
+
+.card-body strong {
+  display: block;
+  margin-bottom: 12px;
+  font-size: 1rem;
+}
+
+.button {
+  display: inline-block;
+  padding: 11px 18px;
+  border-radius: 4px;
+  background: linear-gradient(180deg, #2a66f4, #1953e2);
+  color: #fff;
+  font-weight: 600;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.15);
+}
+
+.button:hover {
+  background: linear-gradient(180deg, #2e6cf9, #154ad0);
+}
+
+.button-small {
+  padding: 7px 14px;
+  font-size: 0.86rem;
+}
+
+.table-wrap {
+  overflow-x: auto;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #fff;
+}
+
+th,
+td {
+  padding: 8px 10px;
+  text-align: left;
+  border-bottom: 1px solid var(--line);
+  font-size: 0.94rem;
+}
+
+thead th {
+  background: linear-gradient(180deg, #18233a, #0f172a);
+  color: #fff;
+  border-bottom: 0;
+}
+
+.section-contact {
+  padding-top: 24px;
+}
+
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 56px;
+  align-items: start;
+}
+
+.contact-copy p {
+  margin: 0;
+  color: var(--muted);
+}
+
+.contact-form {
+  background: #fff;
+  border-radius: 8px;
+  padding: 16px;
+  box-shadow: 0 4px 16px rgba(15, 23, 42, 0.08);
+}
+
+.contact-form label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 0.92rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  width: 100%;
+  margin-top: 4px;
+  padding: 10px 12px;
+  border: 1px solid #d8dce4;
+  border-radius: 4px;
+  font: inherit;
+  color: inherit;
+  background: #fff;
+}
+
+.contact-form textarea {
+  resize: vertical;
+}
+
+.footer {
+  background: linear-gradient(180deg, #111827, var(--navy));
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 0.95rem;
+}
+
+@media (max-width: 900px) {
+  .products-grid,
+  .contact-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .topbar-inner {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu {
+    flex-wrap: wrap;
+    gap: 14px 18px;
+  }
+
+  .hero {
+    padding: 64px 0 72px;
+  }
+}

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 600" role="img" aria-label="Mouse Gamer">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#f2efe6"/>
+      <stop offset="1" stop-color="#d9d2c7"/>
+    </linearGradient>
+    <linearGradient id="mouse" x1="0" y1="0" x2="0.9" y2="0.8">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#e6eaef"/>
+    </linearGradient>
+  </defs>
+  <rect width="900" height="600" fill="url(#bg)"/>
+  <ellipse cx="450" cy="420" rx="180" ry="38" fill="#b9b0a6" opacity="0.35"/>
+  <ellipse cx="450" cy="265" rx="128" ry="170" fill="url(#mouse)" stroke="#c2c7cf" stroke-width="8"/>
+  <path d="M450 128c34 0 62 34 62 76 0 41-10 79-23 116-10 28-24 46-39 46s-29-18-39-46c-13-37-23-75-23-116 0-42 28-76 62-76z" fill="#fbfcfe" opacity="0.9"/>
+  <path d="M450 202v78" stroke="#b4bbc7" stroke-width="8" stroke-linecap="round"/>
+  <circle cx="450" cy="326" r="16" fill="#d5d9e0"/>
+  <path d="M410 176c0 17 17 31 40 31s40-14 40-31" fill="none" stroke="#c6ccd6" stroke-width="7" stroke-linecap="round"/>
+  <rect x="606" y="144" width="26" height="220" rx="13" fill="#8a93a0" opacity="0.6"/>
+  <rect x="646" y="176" width="26" height="188" rx="13" fill="#c3c7cf" opacity="0.65"/>
+  <rect x="686" y="218" width="26" height="146" rx="13" fill="#8a93a0" opacity="0.5"/>
+</svg>
