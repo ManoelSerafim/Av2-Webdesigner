@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TechStore - Equipamentos de Informática</title>
+
+  <!-- Importa a fonte personalizada do Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Conecta o arquivo de estilo externo -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- CABEÇALHO DA PÁGINA -->
+  <header class="cabecalho">
+    <h1 class="titulo-loja">TechStore</h1>
+
+    <!-- MENU DE NAVEGAÇÃO -->
+    <nav class="menu">
+      <ul>
+        <li><a href="#">Início</a></li>
+        <li><a href="#produtos">Produtos</a></li>
+        <li><a href="#servicos">Serviços</a></li>
+        <li><a href="#contato">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- SEÇÃO PRINCIPAL -->
+  <main>
+
+    <!-- BANNER / DESTAQUE -->
+    <section class="banner">
+      <p class="texto-banner">Tecnologia para o seu dia a dia</p>
+      <h2>Equipamentos e acessórios de informática</h2>
+      <p class="texto-banner">Notebooks, periféricos e componentes com qualidade e bons preços.</p>
+      <a href="#produtos" class="botao">Ver produtos</a>
+    </section>
+
+    <!-- PRODUTOS EM DESTAQUE -->
+    <section id="produtos" class="secao-produtos">
+      <h2 class="titulo-secao">Produtos em destaque</h2>
+
+      <div class="lista-produtos">
+
+        <!-- PRODUTO 1 -->
+        <div class="produto">
+          <img src="https://images.unsplash.com/photo-1496181133206-80ce9b88a853?w=400" alt="Notebook Pro 15">
+          <h3>Notebook Pro 15</h3>
+          <p>Intel Core i5, 16 GB RAM e SSD de 512 GB</p>
+          <p class="preco">R$ 3.499,00</p>
+          <a href="#" class="botao-comprar">Comprar</a>
+        </div>
+
+        <!-- PRODUTO 2 -->
+        <div class="produto">
+          <img src="https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=400" alt="Mouse Gamer">
+          <h3>Mouse Gamer</h3>
+          <p>Sensor preciso, iluminação RGB e design ergonômico</p>
+          <p class="preco">R$ 149,90</p>
+          <a href="#" class="botao-comprar">Comprar</a>
+        </div>
+
+        <!-- PRODUTO 3 -->
+        <div class="produto">
+          <img src="https://images.unsplash.com/photo-1587829741301-dc798b83add3?w=400" alt="Teclado Mecânico">
+          <h3>Teclado Mecânico</h3>
+          <p>Teclas mecânicas, iluminação LED e conexão USB</p>
+          <p class="preco">R$ 279,90</p>
+          <a href="#" class="botao-comprar">Comprar</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SERVIÇOS COM TABELA -->
+    <section id="servicos" class="secao-servicos">
+      <h2 class="titulo-secao">Serviços</h2>
+
+      <!-- TABELA COM OS SERVIÇOS -->
+      <table class="tabela-servicos">
+        <tr>
+          <th>Serviço</th>
+          <th>Descrição</th>
+          <th>Valor</th>
+        </tr>
+        <tr>
+          <td>Formatação</td>
+          <td>Instalação e configuração do sistema</td>
+          <td>R$ 120,00</td>
+        </tr>
+        <tr>
+          <td>Limpeza</td>
+          <td>Manutenção preventiva</td>
+          <td>R$ 80,00</td>
+        </tr>
+        <tr>
+          <td>Upgrade</td>
+          <td>Instalação de memória e SSD</td>
+          <td>A partir de R$ 60,00</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- FORMULÁRIO DE CONTATO -->
+    <section id="contato" class="secao-contato">
+      <div class="texto-contato">
+        <h2 class="titulo-secao">Entre em contato</h2>
+        <p>Envie uma mensagem para nossa equipe</p>
+      </div>
+
+      <form class="formulario">
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" placeholder="Digite seu nome">
+
+        <label for="email">E-mail</label>
+        <input type="email" id="email" placeholder="Digite seu e-mail">
+
+        <label for="mensagem">Mensagem</label>
+        <textarea id="mensagem" placeholder="Escreva sua mensagem"></textarea>
+
+        <button type="button" class="botao-enviar">Enviar</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- RODAPÉ DA PÁGINA -->
+  <footer class="rodape">
+    <p>&copy; 2026 TechStore - Loja Virtual de Informática</p>
+  </footer>
+
+</body>
+</html>

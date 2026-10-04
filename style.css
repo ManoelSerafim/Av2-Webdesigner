@@ -1,0 +1,274 @@
+/* ============================================
+   ESTILO DA PÁGINA TECHSTORE
+   ============================================ */
+
+/* Reinicia algumas configurações padrão */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define a fonte padrão da página */
+body {
+  font-family: 'Poppins', Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* ============================================
+   CABEÇALHO (HEADER)
+   ============================================ */
+.cabecalho {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 20px 40px;
+  display: flex;            /* Alinha os itens lado a lado */
+  justify-content: space-between;
+  align-items: center;
+}
+
+.titulo-loja {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+/* Menu de navegação */
+.menu ul {
+  list-style: none;          /* Remove os marcadores da lista */
+  display: flex;              /* Itens lado a lado */
+}
+
+.menu li {
+  margin-left: 25px;
+}
+
+.menu a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu a:hover {
+  color: #4a90e2;            /* Muda a cor ao passar o mouse */
+}
+
+/* ============================================
+   BANNER PRINCIPAL
+   ============================================ */
+.banner {
+  background: linear-gradient(135deg, #1e5f9e, #3a7bd5);
+  color: #ffffff;
+  text-align: left;
+  padding: 60px 40px;
+}
+
+.texto-banner {
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+.banner h2 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+/* Botão do banner */
+.botao {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1e5f9e;
+  padding: 12px 30px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  margin-top: 20px;
+}
+
+.botao:hover {
+  background-color: #e8e8e8;
+}
+
+/* ============================================
+   SEÇÃO DE PRODUTOS
+   ============================================ */
+.secao-produtos {
+  padding: 40px;
+}
+
+.titulo-secao {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Lista de produtos (container) */
+.lista-produtos {
+  display: flex;              /* Produtos lado a lado */
+  justify-content: space-between;
+}
+
+/* Cada cartão de produto */
+.produto {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 15px;
+  width: 30%;
+  margin-bottom: 20px;
+}
+
+.produto img {
+  width: 100%;               /* Imagem ocupa toda a largura do cartão */
+  height: 150px;
+  object-fit: cover;          /* Corta a imagem sem distorcer */
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+.produto h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+}
+
+.produto p {
+  font-size: 13px;
+  color: #666;
+  margin-bottom: 8px;
+}
+
+.preco {
+  color: #1a1a2e !important;
+  font-weight: 700;
+  font-size: 16px !important;
+}
+
+/* Botão comprar */
+.botao-comprar {
+  display: inline-block;
+  background-color: #4a90e2;
+  color: #ffffff;
+  padding: 8px 20px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-size: 13px;
+  margin-top: 5px;
+}
+
+.botao-comprar:hover {
+  background-color: #357abd;
+}
+
+/* ============================================
+   SEÇÃO DE SERVIÇOS (TABELA)
+   ============================================ */
+.secao-servicos {
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+/* Tabela de serviços */
+.tabela-servicos {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 15px;
+}
+
+.tabela-servicos th {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  padding: 12px 15px;
+  text-align: left;
+  font-size: 14px;
+}
+
+.tabela-servicos td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #e0e0e0;
+  font-size: 14px;
+}
+
+.tabela-servicos tr:nth-child(even) {
+  background-color: #f9f9f9;   /* Cor de fundo alternada nas linhas */
+}
+
+/* ============================================
+   SEÇÃO DE CONTATO
+   ============================================ */
+.secao-contato {
+  padding: 40px;
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+}
+
+.texto-contato {
+  width: 40%;
+}
+
+.texto-contato p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 10px;
+}
+
+/* Formulário de contato */
+.formulario {
+  width: 50%;
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 25px;
+}
+
+.formulario label {
+  display: block;
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  margin-top: 15px;
+}
+
+.formulario input,
+.formulario textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 13px;
+}
+
+.formulario textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+/* Botão enviar */
+.botao-enviar {
+  background-color: #4a90e2;
+  color: #ffffff;
+  border: none;
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-family: 'Poppins', Arial, sans-serif;
+  font-size: 14px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.botao-enviar:hover {
+  background-color: #357abd;
+}
+
+/* ============================================
+   RODAPÉ (FOOTER)
+   ============================================ */
+.rodape {
+  background-color: #1a1a2e;
+  color: #ffffff;
+  text-align: center;
+  padding: 20px;
+  font-size: 13px;
+}
